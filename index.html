@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Tiles</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ========== PARTICLE BACKGROUND ========== -->
+    <canvas id="particles"></canvas>
+
+    <!-- ========== FLOATING SHAPES ========== -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">◆</span> Tech Tiles
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HOME (NAVY BACKGROUND) ========== -->
+    <section id="home" class="hero">
+        <div class="hero-bg-navy"></div>
+        <div class="hero-bg-yellow"></div>
+        <div class="hero-grid-bg">
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">✦ Produk Digital Edukasi</div>
+                <h1>
+                    Tech 
+                    <span class="highlight">Tiles</span>
+                </h1>
+                <br>
+                <p>
+                    Tech Tiles menyediakan website interaktif yang mengajarkan
+                    konsep teknologi informasi melalui pendekatan cerita dan
+                    aktivitas. Dapat digunakan secara langsung tanpa proses
+                    instalasi maupun registrasi.
+                </p>
+                <br>
+                <br>
+                <div class="hero-actions">
+                    <a href="#produk" class="btn btn-primary pulse-btn">Jelajahi Produk →</a>
+                    <a href="#tentang" class="btn btn-secondary">Pelajari Lebih Lanjut</a>
+                </div>
+                
+            </div>
+            <div class="hero-visual">
+                <div class="hero-illustration">
+                    <div class="tech-orb"></div>
+                    <div class="tech-ring ring-1"></div>
+                    <div class="tech-ring ring-2"></div>
+                    <div class="tech-ring ring-3"></div>
+                    <div class="tech-ring ring-4"></div>
+                    <div class="illustration-card card-1">
+                        <span class="card-icon">📘</span>
+                        <p>Modul Interaktif</p>
+                        <div class="card-pulse"></div>
+                    </div>
+                    <div class="illustration-card card-2">
+                        <span class="card-icon">💻</span>
+                        <p>Tanpa Database</p>
+                        <div class="card-pulse"></div>
+                    </div>
+                    <div class="illustration-card card-3">
+                        <span class="card-icon">🎯</span>
+                        <p>Usia 5-12 Tahun</p>
+                        <div class="card-pulse"></div>
+                    </div>
+                    <div class="illustration-card card-4">
+                        <span class="card-icon">⭐</span>
+                        <p>Siap Pakai</p>
+                        <div class="card-pulse"></div>
+                    </div>
+                    <div class="hero-accent-line"></div>
+                    <div class="hero-accent-dots"></div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- ========== PRODUK (YELLOW BACKGROUND) ========== -->
+    <section id="produk" class="produk">
+        <div class="produk-bg-yellow"></div>
+        <div class="produk-bg-navy"></div>
+        <div class="produk-particles-container">
+            <div class="prod-particle"></div>
+            <div class="prod-particle"></div>
+            <div class="prod-particle"></div>
+            <div class="prod-particle"></div>
+            <div class="prod-particle"></div>
+            <div class="prod-particle"></div>
+            <div class="prod-particle"></div>
+            <div class="prod-particle"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Seri Pembelajaran Digital</h2>
+                <p>
+                    Setiap produk merupakan website satu halaman yang dirancang
+                    khusus untuk mengenalkan konsep teknologi secara bertahap.
+                </p>
+            </div>
+
+            <div class="produk-grid">
+                <!-- Card 1 -->
+                <div class="produk-card" data-delay="0">
+                    <div class="card-glow"></div>
+                    <div class="card-badge">Populer</div>
+                    <div class="card-icon-large">🌐</div>
+                    <h3>Web Explorer</h3>
+                    <p>Pengenalan website dan browser melalui petualangan di pasar digital.</p>
+                    <div class="card-meta">
+                        <span>Usia 5-8</span>
+                        <span>HTML & CSS</span>
+                    </div>
+                    <div class="card-price">Rp49.000</div>
+                    <a href="#" class="btn btn-outline">Detail Produk</a>
+                    <div class="card-shimmer"></div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="produk-card" data-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="card-badge">Best Seller</div>
+                    <div class="card-icon-large">🐉</div>
+                    <h3>Code Dragon</h3>
+                    <p>Memahami struktur HTML dasar melalui aktivitas menyusun blok kode.</p>
+                    <div class="card-meta">
+                        <span>Usia 6-10</span>
+                        <span>HTML Dasar</span>
+                    </div>
+                    <div class="card-price">Rp59.000</div>
+                    <a href="#" class="btn btn-outline">Detail Produk</a>
+                    <div class="card-shimmer"></div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="produk-card" data-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-large">🎨</div>
+                    <h3>Style Wizard</h3>
+                    <p>Pembelajaran CSS dasar untuk memberi gaya visual pada elemen website.</p>
+                    <div class="card-meta">
+                        <span>Usia 6-10</span>
+                        <span>CSS Dasar</span>
+                    </div>
+                    <div class="card-price">Rp49.000</div>
+                    <a href="#" class="btn btn-outline">Detail Produk</a>
+                    <div class="card-shimmer"></div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="produk-card" data-delay="300">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-large">🤖</div>
+                    <h3>Robot Adventurer</h3>
+                    <p>Pengenalan JavaScript melalui interaksi tombol dan animasi sederhana.</p>
+                    <div class="card-meta">
+                        <span>Usia 7-11</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="card-price">Rp69.000</div>
+                    <a href="#" class="btn btn-outline">Detail Produk</a>
+                    <div class="card-shimmer"></div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="produk-card" data-delay="400">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-large">🗺️</div>
+                    <h3>Treasure Map</h3>
+                    <p>Konsep navigasi dan hyperlink melalui permainan pilihan jalur.</p>
+                    <div class="card-meta">
+                        <span>Usia 5-9</span>
+                        <span>Navigasi</span>
+                    </div>
+                    <div class="card-price">Rp49.000</div>
+                    <a href="#" class="btn btn-outline">Detail Produk</a>
+                    <div class="card-shimmer"></div>
+                </div>
+
+                <!-- Card 6 - Bundle -->
+                <div class="produk-card card-bundle" data-delay="500">
+                    <div class="card-glow"></div>
+                    <div class="card-badge">Paket Hemat</div>
+                    <div class="card-icon-large">📦</div>
+                    <h3>Paket Petualangan Digital</h3>
+                    <p>Koleksi 5 website dengan tema petualangan internet untuk pembelajaran komprehensif.</p>
+                    <div class="card-meta">
+                        <span>Usia 5-11</span>
+                        <span>5 Produk</span>
+                    </div>
+                    <div class="card-price">Rp199.000 <span class="old-price">Rp275.000</span></div>
+                    <a href="#" class="btn btn-primary">Pesan Paket</a>
+                    <div class="card-shimmer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TENTANG (NAVY BACKGROUND) ========== -->
+    <section id="tentang" class="tentang">
+        <div class="tentang-bg-navy"></div>
+        <div class="tentang-bg-yellow"></div>
+        <div class="tentang-animated-lines">
+            <div class="t-line"></div>
+            <div class="t-line"></div>
+            <div class="t-line"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+              
+                <h2>Mengapa Tech Tiles?</h2>
+                <p>
+                    Kami menghadirkan pendekatan baru dalam pembelajaran teknologi
+                    untuk anak-anak.
+                </p>
+            </div>
+
+            <div class="tentang-grid">
+                <div class="tentang-item" data-delay="0">
+                    <div class="tentang-icon">📖</div>
+                    <h3>Pendekatan Naratif</h3>
+                    <p>Setiap materi dikemas dalam cerita yang terstruktur untuk memudahkan pemahaman konsep teknis.</p>
+                    <div class="tentang-accent"></div>
+                    <div class="tentang-ripple"></div>
+                </div>
+                <div class="tentang-item" data-delay="100">
+                    <div class="tentang-icon">⚡</div>
+                    <h3>Tanpa Instalasi</h3>
+                    <p>Produk dapat diakses langsung melalui browser tanpa proses instalasi atau registrasi akun.</p>
+                    <div class="tentang-accent"></div>
+                    <div class="tentang-ripple"></div>
+                </div>
+                <div class="tentang-item" data-delay="200">
+                    <div class="tentang-icon">🎯</div>
+                    <h3>Desain Terarah</h3>
+                    <p>Antarmuka dirancang dengan mempertimbangkan kebutuhan dan kemampuan kognitif anak-anak.</p>
+                    <div class="tentang-accent"></div>
+                    <div class="tentang-ripple"></div>
+                </div>
+                <div class="tentang-item" data-delay="300">
+                    <div class="tentang-icon">🏅</div>
+                    <h3>Sistem Reward</h3>
+                    <p>Mekanisme penghargaan digital untuk mempertahankan motivasi belajar anak.</p>
+                    <div class="tentang-accent"></div>
+                    <div class="tentang-ripple"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONI (YELLOW BACKGROUND) ========== -->
+    <section id="testimoni" class="testimoni">
+        <div class="testimoni-bg-yellow"></div>
+        <div class="testimoni-bg-navy"></div>
+        <div class="testimoni-float-icons">
+            <span class="float-icon">⭐</span>
+            <span class="float-icon">💬</span>
+            <span class="float-icon">🌟</span>
+            <span class="float-icon">👏</span>
+        </div>
+        <div class="container">
+            <div class="section-header">
+             
+                <h2>Ulasan Pengguna</h2>
+                <p>Pendapat dari orang tua dan pendidik yang telah menggunakan Tech Tiles.</p>
+            </div>
+
+            <div class="testimoni-grid">
+                <div class="testimoni-card" data-delay="0">
+                    <div class="testimoni-header">
+                        <span class="testimoni-avatar">R</span>
+                        <div>
+                            <h4>Rina Wijaya</h4>
+                            <p>Orang Tua, Jakarta</p>
+                        </div>
+                    </div>
+                    <p class="testimoni-text">
+                        "Anak saya menunjukkan minat yang tinggi terhadap teknologi
+                        setelah menggunakan produk Tech Tiles. Pendekatan cerita membuat
+                        materi yang kompleks menjadi lebih mudah dipahami."
+                    </p>
+                    <div class="testimoni-rating">★★★★★</div>
+                    <div class="testimoni-glow"></div>
+                </div>
+
+                <div class="testimoni-card" data-delay="100">
+                    <div class="testimoni-header">
+                        <span class="testimoni-avatar">B</span>
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <p>Guru SD, Bandung</p>
+                        </div>
+                    </div>
+                    <p class="testimoni-text">
+                        "Sebagai pendidik, saya mengapresiasi struktur materi yang
+                        terorganisir dengan baik. Siswa dapat belajar secara mandiri
+                        dengan bantuan minimal dari guru."
+                    </p>
+                    <div class="testimoni-rating">★★★★★</div>
+                    <div class="testimoni-glow"></div>
+                </div>
+
+                <div class="testimoni-card" data-delay="200">
+                    <div class="testimoni-header">
+                        <span class="testimoni-avatar">D</span>
+                        <div>
+                            <h4>Dewi Lestari</h4>
+                            <p>Kepala Sekolah, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <p class="testimoni-text">
+                        "Tech Tiles menjadi solusi pembelajaran teknologi yang kami
+                        gunakan di sekolah. Produk ini membantu menjembatani kesenjangan
+                        digital di kalangan siswa."
+                    </p>
+                    <div class="testimoni-rating">★★★★★</div>
+                    <div class="testimoni-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== KONTAK (NAVY & YELLOW MIX) ========== -->
+    <section id="kontak" class="kontak">
+        <div class="kontak-bg-navy"></div>
+        <div class="kontak-bg-yellow"></div>
+        <div class="kontak-grid-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+         
+                <h2>Konsultasi & Informasi</h2>
+                <p>Tim kami siap membantu menjawab pertanyaan Anda.</p>
+            </div>
+
+            <div class="kontak-grid">
+                <div class="kontak-info">
+                    <div class="kontak-item">
+                        <span class="kontak-icon">📧</span>
+                        <div>
+                            <h4>Alamat Email</h4>
+                            <p>hello@techtiles.id</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <span class="kontak-icon">📱</span>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <span class="kontak-icon">🌐</span>
+                        <div>
+                            <h4>Media Sosial</h4>
+                            <p>@techtiles_id</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <span class="kontak-icon">📍</span>
+                        <div>
+                            <h4>Kantor</h4>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="kontak-decoration">◆</div>
+                    <div class="kontak-accent-line"></div>
+                    <div class="kontak-pulse-dot"></div>
+                </div>
+
+                <form class="kontak-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama Anda" required />
+                        <div class="input-focus-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" placeholder="Masukkan email Anda" required />
+                        <div class="input-focus-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" rows="4" placeholder="Tulis pesan atau pertanyaan Anda..." required></textarea>
+                        <div class="input-focus-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                    <p class="form-notice" id="formNotice"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">◆</span> Tech Tiles
+                    <p>Platform pembelajaran teknologi untuk anak-anak Indonesia.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech Tiles. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
